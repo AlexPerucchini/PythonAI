@@ -7,7 +7,7 @@ Enter number:
 3
 3 10 5 16 8 4 2 1
 '''
-
+seed  = 10
 def collatz(number):
     if number % 2 == 0:
         print (number, end=' ')
@@ -21,6 +21,8 @@ def collatz(number):
         number = round((3 * number) + 1)
         return number
 
-n = collatz(10)
-for i in range (1, 10):
+print(seed)
+n = collatz(seed)
+
+while True: #loop while != 1
     n = collatz(n)
