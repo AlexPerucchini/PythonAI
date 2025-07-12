@@ -7,7 +7,6 @@ Enter number:
 3
 3 10 5 16 8 4 2 1
 '''
-import sys
 
 def collatz(number):
     if number % 2 == 0:
